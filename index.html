@@ -89,7 +89,7 @@
             nextBtn.addEventListener('click', () => {
                 if (currentIndex < slide.length - 2) {
                     currentIndex++;
-                    prevImg.src = 'img/_ArrowLeftNone.svg';
+                    prevImg.src = 'img2/_ArrowLeftNone.svg';
 
                 }
                 updateSlide();
@@ -97,25 +97,25 @@
                 console.log(currentIndex);
 
                 if (currentIndex >= 5) {
-                    nextImg.src = 'img/2ArrowRight.svg';
+                    nextImg.src = 'img2/2ArrowRight.svg';
 
                 }
 
                 if (currentIndex >= 5) {
                     currentIndex = 5;
-                    nextImg.src = 'img/2ArrowRight.svg';
+                    nextImg.src = 'img2/2ArrowRight.svg';
                 }
             });
 
             prevBtn.addEventListener('click', () => {
                 if (currentIndex > 0) {
                     currentIndex--;
-                    nextImg.src = 'img/_ArrowRightNone.svg';
+                    nextImg.src = 'img2/_ArrowRightNone.svg';
                 }
                 updateSlide();
 
                 if (currentIndex <= 0) {
-                    prevImg.src = 'img/_ArrowLeft.svg';
+                    prevImg.src = 'img2/_ArrowLeft.svg';
                 }
 
             });
@@ -317,10 +317,10 @@
 
                     <div class="arrow_box">
                         <button class="button prev_box">
-                            <img src="img/_ArrowLeft.svg" alt="">
+                            <img src="img2/_ArrowLeft.svg" alt="">
                         </button>
                         <button class="button next_box">
-                            <img src="img/_ArrowRightNone.svg" alt="">
+                            <img src="img2/_ArrowRightNone.svg" alt="">
                         </button>
                     </div> <!-- arrow_box end -->
 
